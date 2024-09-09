@@ -1,0 +1,128 @@
+.navbar {
+  background-color: #b06502;
+  backdrop-filter: blur(15px);
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgb(61, 38, 1);
+}
+
+.Navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-logo:hover {
+  color: #1d1d1d;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 2rem;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #202020;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Asegura que el contenido esté centrado */
+  width: 100%; /* Asegura que el enlace ocupe el ancho completo */
+}
+
+.whatsapp-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1002;
+    margin-left: 1rem;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #c5c6c7;
+  }
+
+  .navbar-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu {
+    position: fixed;
+    left: -100%;
+    top: 3.5rem;
+    flex-direction: column;
+    background-color: #b06502;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1001;
+  }
+
+  .navbar-open .navbar-menu {
+    left: 0;
+  }
+
+  .navbar-item {
+    margin: 1.5rem 0;
+  }
+
+  .whatsapp-link {
+    margin-left: 130px;
+  }
+}
+
+.navbar-link {
+  font-size: 1.2rem;
+}
