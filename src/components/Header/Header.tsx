@@ -18,7 +18,7 @@ function Header({ id }: HeaderProps) {
               Conectamos clientes con profesionales de oficios, para cualquier necesidad en el hogar.
               Encuentra al experto adecuado con un simple clic, y contrata con total tranquilidad.
             </p>
-            <p className='parrafo2'>¡Sin comisiones! Totalmente gratuito</p>
+            <p className='parrafo2'>¡Sin comisiones! Totalmente gratis.</p>
             <a href="https://tally.so/r/n9v7rX" target="_blank" rel="noopener noreferrer">
               <button className="hero-cta">Comenzar Ahora</button>
             </a>
